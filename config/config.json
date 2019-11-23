@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "Cbonnet20!",
-    "database": "exampledb",
+    "database": "stout_db",
     "host": "localhost",
     "dialect": "mysql"
   },
