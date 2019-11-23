@@ -1,0 +1,20 @@
+{
+  "name": "avada-kedavra",
+  "version": "1.0.0",
+  "description": "Project Two",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kpressley86/Avada-Kedavra.git"
+  },
+  "author": "Kelly Pressley, Calli Bonnet, Eric Figueroa, Simone Cunningham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kpressley86/Avada-Kedavra/issues"
+  },
+  "homepage": "https://github.com/Kpressley86/Avada-Kedavra#readme"
+}
