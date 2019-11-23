@@ -1,3 +1,25 @@
-.list-group-item {
-  line-height: 2.5;
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* The below is all used for the index.handlebars file  */
+
+#mainPage{
+  background-image: url("./Images/beer-background-with-bubble.jpg"); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
 }
+
+#headerJumbotron{
+  margin-top: 200px; 
+
+}
+
+#memberAndLoginJumbotron{
+  background-color: #ffcea081; 
+}
+
+#newMemberBtm{
+  margin-right: 20px; 
+}
+
+

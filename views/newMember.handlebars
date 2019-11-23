@@ -1,0 +1,65 @@
+{{!-- This is the nav bar at the top of the page --}}
+<div class="container">
+  <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <a href="/">← Back To Home</a>
+    </li>
+  </ul>
+</div>
+
+{{!-- This is the form to create a new profile  --}}
+<div class="container">
+  <div class="row">
+    <div class="col-8 offset-2">
+      <div class="card mt-4">
+        <div class="card-body">
+          <h5 class="card-title">Create a Profile to Become a Member</h5>
+          <div class="container">
+            <div class="row">
+              <div class="col-2"></div>
+              <div class="col-8">
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">First Name</label>
+                      <input type="email" class="form-control" id="inputEmail4" placeholder="ex: john">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Last Name</label>
+                      <input type="password" class="form-control" id="inputPassword4" placeholder="ex: smith">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="inputAddress">Create User Name</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="BeerBlogger1">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="inputAddress2">Create Password</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="password">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="inputFavBeer">Select your favorite beer</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                      <option>...</option>
+                      <option>...</option>
+                      <option>...</option>
+                      <option>...</option>
+                    </select> </div>
+
+                  <button type="submit" class="btn btn-primary">Find Beer Now! </button>
+                </form>
+              </div>
+
+              <div class="col-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
