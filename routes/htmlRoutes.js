@@ -1,7 +1,5 @@
 var db = require("../models");
 
-
-
 module.exports = function (app) {
 
   // //This is the index.handlebars file
@@ -19,6 +17,10 @@ module.exports = function (app) {
     res.render("newMember");
   });
 
+  // //This is the memberLogin.handlebars file
+  app.get("/memberLogin", function (req, res) {
+    res.render("memberLogin");
+  });
 
   // Render 404 page for any unmatched routes
   app.get("*", function (req, res) {
