@@ -1,27 +1,51 @@
 <div id="mainPage">
 
-    <div class="container-fuild">
-        <div class="row">
-            <div class="col-12">
-                <div class="jumbotron" id="headerJumbotron">
-                    <h1 class="display-4">The Stout</h1>
-                    <p class="lead">Beer made simple</p>
-                </div>
-            </div>
-        </div>
+
+  <div class="container-fuild">
+    {{!-- company logo item --}}
+    <div class="row" id="companyLgoContent">
+      <div class="col-12">
+        <div class="image"></div>
+      </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="jumbotron" id="memberAndLoginJumbotron">
-                    <a class="btn btn-light btn-lg" id="newMemberBtm" href="/newMember" role="button">Become a Member</a>
-                    <a class="btn btn-light btn-lg" id="alreadyMemberBtn" href="#" role="button">Already a Member</a>
-                </div>
-            </div>
-        </div>
+    {{!-- nav bar items  --}}
+    <div class="row">
+      <div class="col-12">
+        <ul class="nav nav-pills nav-fill" id="navBarContent">
+          <li class="nav-item">
+            <a class="nav-link active" href="/">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="newMemberbtn" href="/newMember">BECOME A MEMBER</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fas fa-beer" href="/memberLogin"></a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
 
+  <div class="container-fuild">
+    <div class="row">
+      <div class="col-12">
+       <div class="image-beer"></div>
+       <div class="row">
+         <div class="col-8"></div>
+         <div class="col-4">
+           <h1>Scout the Best Beer! </h1>
+         </div>
+       </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  {{!-- End of page content div  --}}
 </div>
 
 

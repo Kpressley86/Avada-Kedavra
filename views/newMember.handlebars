@@ -1,3 +1,31 @@
+
+<div class="container-fuild">
+  
+  {{!-- company logo item --}}
+  <div class="row" id="companyLgoContent">
+    <div class="col-12">
+      <div class="image"></div>
+    </div>
+  </div>
+
+  {{!-- nav bar items  --}}
+  <div class="row">
+    <div class="col-12">
+      <ul class="nav nav-pills nav-fill" id="navBarContent">
+        <li class="nav-item">
+          <a class="nav-link active" href="/">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="newMemberbtn" href="/newMember">BECOME A MEMBER</a>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fas fa-beer" href="/memberLogin"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
 {{!-- This is the nav bar at the top of the page --}}
 <div class="container-fuild"  id="nav-Container">
   <ul class="nav justify-content-end" id="nav-bar"">
@@ -5,24 +33,28 @@
       <a href="/">← Back To Home</a>
     </li>
   </ul>
+
 </div>
+
 
 {{!-- This is the form to create a new profile  --}}
 <div class="container">
   <div class="row">
-    <div class="col-8 offset-2">
+    <div class="offset-2">
       <div class="card mt-4">
         <div class="card-body">
-          <h5 class="card-title">Create a Profile to Become a Member</h5>
           <div class="container">
             <div class="row">
-              <div class="col-2"></div>
-              <div class="col-8">
+              <h5 class="card-title">Create a Profile to Become a Member</h5>
+              <div class="col-1"></div>
+              <div class="col-10">
                 <form>
                   <div class="form-row">
                     <div class="form-group col-md-6">
                       <label for="inputFirstName">First Name</label>
+
                       <input type="text" class="form-control" id="inputFirstName" placeholder="ex: john">
+
                     </div>
                     <div class="form-group col-md-6">
                       <label for="inputLastName">Last Name</label>
@@ -36,8 +68,10 @@
                   </div>
 
                   <div class="form-group">
+
                     <label for="inputPassword">Create Password</label>
                     <input type="password" class="form-control" id="inputPassword" placeholder="password">
+
                   </div>
 
                   <div class="form-group">
@@ -55,7 +89,7 @@
                 </form>
               </div>
 
-              <div class="col-2"></div>
+              <div class="col-1"></div>
             </div>
           </div>
         </div>

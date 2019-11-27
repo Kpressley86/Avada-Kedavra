@@ -1,4 +1,66 @@
 {{!-- This is the nav bar at the top of the page --}}
+
+<div class="container-fuild">
+  {{!-- company logo item --}}
+  <div class="row" id="companyLgoContent">
+    <div class="col-12">
+      <div class="image"></div>
+    </div>
+  </div>
+
+  {{!-- nav bar items  --}}
+  <div class="row">
+    <div class="col-12">
+      <ul class="nav nav-pills nav-fill" id="navBarContent">
+        <li class="nav-item">
+          <a class="nav-link active" href="/">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="newMemberbtn" href="/newMember">BECOME A MEMBER</a>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fas fa-beer" href="/memberLogin"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+{{!-- This is the form to create a new profile  --}}
+<div class="container">
+  <div class="row">
+    <div class="offset-2">
+      <div class="card mt-4">
+        <div class="card-body">
+          <div class="container">
+            <div class="row">
+              <h5 class="card-title">Login to Find your Beers</h5>
+              <div class="col-1"></div>
+              <div class="col-10">
+                <form>
+                  <div class="form-group">
+                    <label for="inputUserName">Enter User Name</label>
+                    <input type="text" class="form-control" id="inputUserName" placeholder="BeerBlogger1">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputpassword">Enter your Password</label>
+                    <input type="password" class="form-control" id="inputpassword" placeholder="password">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Login</button>
+                  <button type="submit" class="btn btn-primary" href="/memberLogin">Become a Member</button>
+                </form>
+              </div>
+
+              <div class="col-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <div class="container-fuild"  id="nav-Container">
   <ul class="nav justify-content-end" id="nav-bar"">
     <li class="nav-item">
@@ -8,4 +70,5 @@
       <a href="/memberLogin">← Back To Home</a>
     </li>
   </ul>
+
 </div>
