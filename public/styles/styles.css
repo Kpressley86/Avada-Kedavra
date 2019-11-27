@@ -23,3 +23,11 @@
 }
 
 
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* The below is all used for the newMember.handlebars file  */
+
+#nav-bar {
+  padding-top: 20px; 
+  padding-right: 20px; 
+}
