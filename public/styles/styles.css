@@ -41,23 +41,29 @@ div.image-beer{
   background-repeat: no-repeat; 
 }
 
-#headerJumbotron{
-  margin-top: 200px; 
 
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* The below is all used for the memberLogin.handlebars */
+
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* The below is all used for the Global Footer on the External Webpages */
+
+footer{
+  background-color: rgb(143, 54, 3); 
+  margin-top: 20px; 
 }
 
-#memberAndLoginJumbotron{
-  background-color: #ffcea081; 
-}
-
-#newMemberBtm{
-  margin-right: 20px; 
+#fontAwesomeFooterIcons{
+  font-size: 20px; 
 }
 
 
 
-#nav-bar {
-  padding-top: 20px; 
-  padding-right: 20px; 
-}
+
+
 
