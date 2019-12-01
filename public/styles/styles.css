@@ -1,45 +1,50 @@
+body{
+  background-color: rgb(10, 12, 37); 
+}
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* The below is all used for the index.handlebars file  */
 
-#companyLgoContent{
-  background-color: white; 
-  height: 200px; 
-
+#companyTopNavHeader{
+  background-color:rgba(167, 165, 165, 0.575); 
+  height: 140px; 
+  overflow: hidden; 
 }
 
-div.image{
-  content: url("../Images/Beer-Scout-logo.jpeg"); 
-  height: 177px; 
-  display: block; 
-  margin-left: auto; 
-  margin-right: auto; 
-  margin-top: 20px; 
- padding-left:50px; 
- padding-right:50px; 
-  width: 50%; 
+/* Hold header sticky at top when user scrolls  */
+.sticky {
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
 }
 
-div.image-beer{
-  content:url("../Images/beer-table-2.png"); 
+/* Wood Panel Header Content */
+div.image-woodPanels{
+  background-image: url("../Images/wood_panels.jpg"); 
   height: 400px; 
   width: 100%; 
   background-size: cover; 
   background-repeat: no-repeat; 
+  margin-top: 10px; 
 }
 
-#navBarContent{
-  border: black solid 2px; 
-  padding-right:45px; 
+#headerCard{
+  margin-top: 100px; 
+  background-color: transparent; 
+  color:white; 
+  font-size: 30px; 
+}
+
+div.image-one{
+  content: url("../Images/bottle-beer.png"); 
+  height: 700px; 
+
 }
 
 
-#mainPage{
-  background-image: url("./Images/beer-background-with-bubble.jpg"); 
-  background-size: cover; 
-  background-repeat: no-repeat; 
-}
+
+
 
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -54,16 +59,11 @@ div.image-beer{
 /* The below is all used for the Global Footer on the External Webpages */
 
 footer{
-  background-color: rgb(143, 54, 3); 
+  background-color: rgba(167, 165, 165, 0.575); 
   margin-top: 20px; 
 }
 
 #fontAwesomeFooterIcons{
   font-size: 20px; 
 }
-
-
-
-
-
 
