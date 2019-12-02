@@ -1,5 +1,16 @@
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* Global Style Settiings */
 body{
-  background-color: rgb(10, 12, 37); 
+  background-color: rgb(249, 249, 253); 
+}
+
+p{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.standardFontText{ 
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -7,8 +18,7 @@ body{
 /* The below is all used for the index.handlebars file  */
 
 #companyTopNavHeader{
-  background-color:rgba(167, 165, 165, 0.575); 
-  height: 140px; 
+  background-color:rgba(167, 165, 165, 0.575);
   overflow: hidden; 
 }
 
@@ -39,20 +49,30 @@ div.image-woodPanels{
 div.image-one{
   content: url("../Images/bottle-beer.png"); 
   height: 700px; 
-
 }
-
-
-
 
 
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* The below is all used for the memberLogin.handlebars */
+div.woodPanel-Header{
+  background-image: url("../Images/wood_panels.jpg"); 
+  height: 125px; 
+  width: 100%; 
+}
 
+div.loginHeader{
+  background-image: url("../Images/stripes-light.png"); 
+  width: 100%; 
+  padding-bottom: 40px; 
+}
 
-
+.HeaderFacnyText{
+  font-family: 'Kaushan Script', cursive;
+  padding-top: 20px; 
+  padding-bottom:20px;
+}
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
