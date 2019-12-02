@@ -1,7 +1,4 @@
 @media screen and (min-width: 1200px) {
-    #companyTopNavHeader{
-        height: 140px; 
-      }
     div.image-woodPanels{
         height: 725px; 
 
@@ -9,20 +6,12 @@
 }
 
 @media screen and (min-width: 900px) {
-    #companyTopNavHeader{
-        height: 140px; 
-      }
-
     div.image-woodPanels{
         height: 725px; 
       }
 }
 
 @media screen and (max-width: 768px) {
-    #companyTopNavHeader{
-        height: 140px; 
-      }
-
     div.image-woodPanels{
         height: 700px; 
       }

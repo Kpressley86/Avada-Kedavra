@@ -1,31 +1,33 @@
-{{!-- Top Header Content  --}}
-<div class="container-fuild">
-  <div class="row" id="companyTopNavHeader">
-    <div class="col-7"></div>
 
-    {{!-- Nav Bar Items --}}
-    <div class="col-5">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="/">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="newMemberbtn" href="/newMember">BECOME A MEMBER</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="memberLogin" href="/memberLogin">MEMBER LOGIN</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+{{!-- Content Above the nav bar  --}}
+<div class="container-fuild">
+  <div class="row">
+    <div class="col-12">
+      <div class="woodPanel-Header"></div>
     </div>
   </div>
+</div>
+
+{{!-- This is the nav bar at the top of the page --}}
+<div class="container-fuild">
+  <div class="row" id="companyTopNavHeader">
+    {{!-- nav bar items  --}}
+    <div class="col-12">
+      <ul class="nav nav-pills nav-fill" id="navBarContent">
+        <li class="nav-item">
+          <a class="nav-link standardFontText" href="/">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link standardFontText" id="newMemberbtn" href="/newMember">BECOME A MEMBER</a>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fas fa-beer" href="/memberLogin"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
   {{!-- End of header content  --}}
 
   {{!-- The below is the images under the heeader content --}}
@@ -37,7 +39,6 @@
         <div class="card text-center" id="headerCard">
           <div class="card-body">
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-     
           </div> 
         </div>
       </div>
