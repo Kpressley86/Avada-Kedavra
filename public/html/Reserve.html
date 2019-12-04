@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Fontawesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <!-- {{!-- Google Fonts Link  --}} -->
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <!-- Link to interal CSS  for user experince -->
+    <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
+
+    <!-- Link to interal media CSS  -->
+    <link rel="stylesheet" href="/styles/media.css" media="screen" title="no title" charset="utf-8">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- {{!-- Top Nav Bar  --}} -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link standardFontText" href="/">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <br>
+
+    <!-- container holding the feilds to complete when doing a reservation  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">reserve your taisting</h5>
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputFirstName">first Name</label>
+                                    <input type="text" class="form-control" id="inputFirstName" placeholder="ex: john">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputLastName">last Name</label>
+                                    <input type="text" class="form-control" id="inputLastName" placeholder="ex: smith">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputEmailAddress">your email address</label>
+                                <input type="email" class="form-control" id="inputEmailAddress"
+                                    placeholder="ex: fake@beerTown.com">
+                                <br>
+                                <p>Your email address is only used to send you an email confirmation</p>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">reserve now! </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="/Avada-Kedavra/public/js/FrontEnd.js"></script>
+
+    <!-- Bootstrap JavaScript CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+<script type="text/JavaScript">
+
+    $(".submit").on("click", function (event) {
+        event.preventDefault(); 
+
+        //gathering all required elemants from the user's reservation submittion
+        var newBeerReservation = {
+            customerFirstName: $("inputFirstName").val().trim(), 
+            customerLastName: $("inputLastName").val().trim(), 
+            customerEmailAddress: $("inputEmailAddress").val().trim(), 
+        }; 
+
+        console.log(newBeerReservation); 
+
+        //Creating the API calls 
+        $.post("/api/reservations", newBeerReservation, 
+        function(data) {
+            if(data) {
+                alert("you have been booked. be on the look out for an email");
+            }
+            else {
+                alert("nope. try a different day")
+            }
+
+            //clear the user's input after submitting 
+            $("#inputFirstName").val(""); 
+            $("#inputLastName").val(""); 
+            $("#inputEmailAddress").val(""); 
+        });  
+    }); 
+
+</script>

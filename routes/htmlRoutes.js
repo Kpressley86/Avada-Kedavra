@@ -1,34 +1,21 @@
 var db = require("../models");
 
-module.exports = function (app){
+var path = require("path");
 
-  // //This is the index.handlebars file
-  app.get("/", function (req, res) {
-    db.Example.findAll({}).then(function (dbExamples) {
-      res.render("index", {
-        msg: "Welcome!",
-        examples: dbExamples
-      });
-    });
+module.exports = function(app) {
+
+  //When the user vists the home.html page
+  app.get("/home", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/html/home.html"));
   });
 
-  // //This is the newMember.handlebars file
-  app.get("/newMember", function (req, res) {
-    res.render("newMember");
+  //when the user visits the reserve page for a day
+  app.get("/Reserve", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/html/Reserve.html"));
   });
 
-  // //This is the memberLogin.handlebars file
-  app.get("/memberLogin", function (req, res) {
-    res.render("memberLogin");
-  });
-
-  // //This is the beerRes.handlebars file
-  app.get("/beerReservations", function (req, res) {
-    res.render("beerReservations");
-  });
-
-  // Render 404 page for any unmatched routes
+  // If no matching route is found default to 404 page
   app.get("*", function (req, res) {
-    res.render("404");
+    res.sendFile(path.join(__dirname, "../public/html/404.html"));
   });
 };
