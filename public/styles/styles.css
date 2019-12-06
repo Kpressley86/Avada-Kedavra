@@ -1,89 +1,43 @@
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* Global Style Settiings */
-body{
-  background-color: rgb(249, 249, 253); 
-}
 
-p{
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-}
-
-.standardFontText{ 
-  font-family: 'M PLUS Rounded 1c', sans-serif;
+div.logoImage {
+  content: url("../Images/scoutlogo.png"); 
+  height: 10%; 
+  width: 10%; 
+  margin-right: 20px; 
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* The below is all used for the index.handlebars file  */
+/* The below is all used for the home.html file  */
 
-#companyTopNavHeader{
-  background-color:rgba(167, 165, 165, 0.575);
-  overflow: hidden; 
-}
 
-/* Hold header sticky at top when user scrolls  */
-.sticky {
-  position: fixed; 
-  top: 0; 
-  width: 100%; 
-}
-
-/* Wood Panel Header Content */
-div.image-woodPanels{
-  background-image: url("../Images/wood_panels.jpg"); 
-  height: 400px; 
-  width: 100%; 
-  background-size: cover; 
-  background-repeat: no-repeat; 
-  margin-top: 10px; 
-}
-
-#headerCard{
-  margin-top: 100px; 
+.navRow{
   background-color: transparent; 
-  color:white; 
-  font-size: 30px; 
 }
 
-div.image-one{
-  content: url("../Images/bottle-beer.png"); 
-  height: 700px; 
+.homeHeaderJumbotron{
+  background-color: transparent; 
 }
 
-
-
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* The below is all used for the memberLogin.handlebars */
-div.woodPanel-Header{
-  background-image: url("../Images/wood_panels.jpg"); 
-  height: 125px; 
-  width: 100%; 
+.btn{
+  background-color: rgb(2, 2, 63); 
+  border-color: rgb(2, 2, 63); 
 }
 
-div.loginHeader{
-  background-image: url("../Images/stripes-light.png"); 
-  width: 100%; 
-  padding-bottom: 40px; 
+/* The below are for the three cards on the home page  */
+.threeCards{
+margin-bottom: 20px; 
 }
 
-.HeaderFacnyText{
-  font-family: 'Kaushan Script', cursive;
-  padding-top: 20px; 
-  padding-bottom:20px;
+.firstCard{
+  margin-top:20px; 
+  text-align: center;
+  border-color: transparent; 
 }
 
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* The below is all used for the Global Footer on the External Webpages */
-
-footer{
-  background-color: rgba(167, 165, 165, 0.575); 
-  margin-top: 20px; 
+.locationCard {
+  border-color: transparent; 
 }
-
-#fontAwesomeFooterIcons{
-  font-size: 20px; 
-}
-
