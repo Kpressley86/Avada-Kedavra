@@ -7,6 +7,11 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/html/home.html"));
   });
 
+   //when the user visits the happy hour page
+   app.get("/happyHour", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/html/happyHour.html"));
+  });
+
   //when the user visits the reserve page for a day
   app.get("/Reserve", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/html/Reserve.html"));
