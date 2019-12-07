@@ -2,6 +2,10 @@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* Global Style Settiings */
 
+body {
+  background-color: #fff;; 
+}
+
 div.logoImage {
   content: url("../Images/scoutlogo.png"); 
   height: 10%; 
@@ -9,18 +13,42 @@ div.logoImage {
   margin-right: 20px; 
 }
 
+/* Footer Styling  */
+footer{ 
+  background-color: #2d2d2d;
+  color: white; 
+}
+
+.footerRow{
+  background-color: #2d2d2d;
+}
+
+hr {
+  background-color: white; 
+}
+
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* The below is all used for the home.html file  */
-
-
-.navRow{
-  background-color: transparent; 
+.containerImage{ 
+  background-image: url("../Images/Screen\ Shot\ 2019-12-07\ at\ 11.39.30\ AM.png"); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  height: 550px; 
 }
 
 .homeHeaderJumbotron{
   background-color: transparent; 
 }
+
+.homeHeaderh1 {
+  color: white; 
+}
+
+.homeHeaderp{
+  color: white; 
+}
+
 
 .btn{
   background-color: rgb(2, 2, 63); 
@@ -29,7 +57,10 @@ div.logoImage {
 
 /* The below are for the three cards on the home page  */
 .threeCards{
-margin-bottom: 20px; 
+  margin-bottom: 20px; 
+  padding-top:30px; 
+  padding-bottom: 30px; 
+  top: -20px; 
 }
 
 .firstCard{
@@ -40,4 +71,66 @@ margin-bottom: 20px;
 
 .locationCard {
   border-color: transparent; 
+}
+
+
+/* The below is used for the explore beer cards  */
+/* This is the explore arizona card  */
+.exploreBeerHeaderCard{
+  border-color: transparent; 
+  margin-top: 80px; 
+  margin-bottom: 40px; 
+}
+
+/* The below are all of the beer cards */
+.exploreBeerCard{
+  text-align: center;
+  border-color: transparent; 
+  margin-right: 10px; 
+}
+
+.exploreBeerCard3{
+  text-align: center;
+  border-color: transparent; 
+  margin-right: 10px; 
+}
+
+.singleBeerCan1 {
+  height: 70%; 
+  width: 75%; 
+}
+
+.singleBeerCan2 {
+  height: 70%; 
+  width: 75%; 
+}
+
+.singleBeerCan3 {
+  height: 70%; 
+  width: 70%; 
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* The below is all used for the happyHour.html file  */
+
+.happyHourContainerImage{
+  background-image: url("../Images/beer-cheers/Happy-Hour-Cheers-1.jpg"); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  height: 550px; 
+}
+
+.happyHourHeaderJumbotron{
+  background-color: rgba(255, 255, 255, 0); 
+  border-radius: 20px; 
+  padding-left: 10px; 
+}
+
+.happyHourHeaderh1{
+  color:white; 
+}
+
+.happyHourHeaderp{
+  color:white; 
 }
