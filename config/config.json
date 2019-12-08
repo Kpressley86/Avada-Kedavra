@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "Cbonnet20!",
+    "password": "user",
     "database": "stout_db",
     "host": "localhost",
     "dialect": "mysql"
