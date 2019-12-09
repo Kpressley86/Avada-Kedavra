@@ -100,7 +100,7 @@ $(document).ready(function() {
   $exampleList.on("click", ".delete", handleDeleteBtnClick);
 
   // Array for beers //
-  var beer = [
+  var beer1 = [
     "Codename: Superfan", "IPA", "6.5%", "Colorado", "$5.00",
     "Intergalactic Juice Hunter", "Double IPA", "8.0%", "Colorado", "$6.00",
     "Jetman Jimmy", "Golden Ale", "4.5%", "Colorado", "$4.50",
@@ -144,13 +144,13 @@ $(document).ready(function() {
 
   function writeTable() {
     // cache <tbody> element:
-    var tbody = $("#table");
-    for (var i = 0; i < beer.length / 5; i++) {
+    var tbody = $("#sun");
+    for (var i = 0; i < beer1.length / 5; i++) {
       // create an <tr> element, append it to the <tbody> and cache it as a variable:
       var tr = $("<tr/>").appendTo(tbody);
       for (var j = 0; j < totalCells; j++) {
         // append <td> elements to previously created <tr> element:
-        tr.append("<td>" + beer[count] + "</td>");
+        tr.append("<td>" + beer1[count] + "</td>");
         count++;
       }
     }
@@ -158,13 +158,4 @@ $(document).ready(function() {
     count = 0;
   }
   writeTable();
-  //   table = document.getElementById("table");
-
-  // for (let i = 0; i < beers.length; i++) {
-  //   var newRow = table.insertRow(table.length);
-  //   for (let d = 0; d < beers[1].length; d++) {
-  //       var cell = newRow.insertCell(j);
-  //       cell.innerHTML = beers[i][j];
-  //   }
-  // }
 });
