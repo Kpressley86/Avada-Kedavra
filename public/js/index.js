@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   // Get references to page elements
   var $exampleText = $("#example-text");
   var $exampleDescription = $("#example-description");
@@ -107,37 +107,47 @@ $(document).ready(function() {
     "NOOB", "Pale Ale", "6.0%", "Colorado", "$5.00",
     "Vincent Van Couch", "Sour", "4.8%", "Colorado", "$5.00"];
 
-  //   [{ name: "1337 H4x0r", type: "TRIPPLE IPA", abv: "10.0%", location: "Colorado", cost: "$9.00" },
-  //   { name: "Admiral Abyss", type: "Chocolate Stout", abv: "7.0%", location: "Colorado", cost: "$6.00" },
-  //   { name: "Alpha Twins", type: "Double IPA", abv: "8.25%", location: "Colorado", cost: "$7.00" },
-  //   { name: "Haole Bartender", type: "Sour", abv: "6.0%", location: "Ccolorado", cost: "$5.00" },
-  //   { name: "Fresh Haze", type: "IPA", abv: "6.5%", location: "Oregon", cost: "$5.00" },
-  //   { name: "Mirror pond", type: "Pale Ale", abv: "5.0%", location: "Oregon", cost: "$5.00" },
-  //   { name: "Black Butte", type: "Porter", abv: "5.2%", location: "Oregon", cost: "$5.00" },
-  //   { name: "Obsidian", type: "Stout", abv: "6.4%", location: "Oregon", cost: "$5.00" },
-  //   { name: "Oatis", type: "Stout", abv: "7.0%", location: "Oregon", cost: "$6.00" },
-  //   { name: "Dawn of the Red", type: "Red IPA", abv: "7.0%", location: "Oregon", cost: "$6.00" },
-  //   { name: "Pacific Rain", type: "Pale Ale", abv: "5.4%", location: "Oregon", cost: "$5.00" },
-  //   { name: "RPM", type: "IPA", abv: "6.5%", location: "Oregon", cost: "$6.00" },
-  //   { name: "Skunk Ape", type: "IRA", abv: "6.0%", location: "Oregon", cost: "$5.00" },
-  //   { name: "Armored Fist", type: "IDA", abv: "9.0%", location: "Oregon", cost: "$7.00" },
-  //   { name: "Moon Juice", type: "IPA", abv: "7.3%", location: "Arizona", cost: "$6.00" },
-  //   { name: "Juicy Jack", type: "Hazy IPA", abv: "6.5%", location: "Arizona", cost: "$5.00" },
-  //   { name: "1920", type: "Lager", abv: "4.7%", location: "Arizona", cost: "$4.00" },
-  //   { name: "Coors Light", type: "Light Beer", abv: "4.2%", location: "Colorado", cost: "$4.00" },
-  //   { name: "Bud Light", type: "Light Beer", abv: "5.0%", location: "USA", cost: "$4.00" },
-  //   { name: "Nebula", type: "Stout", abv: "6.0%", location: "Oregon", cost: "$5.00" },
-  //   { name: "Blocktoberfest", type: "Marzen", abv: "5.5%", location: "Oregon", cost: "$5.00" },
-  //   { name: "Dark Matter", type: "Chocolate Porter", abv: "5.0%", location: "Oregon", cost: "$5.00" },
-  //   { name: "Drive Me To Firenze", type: "Pilsner", abv: "4.7%", location: "Oregon", cost: "$5.00" },
-  //   { name: "Imagine", type: "Imperial Stout", abv: "13.5%", location: "Oregon", cost: "$9.00" },
-  //   { name: "Oud Bruin", type: "Brown Ale", abv: "6.5%", location: "Oregon", cost: "$6.00" },
-  //   { name: "Specular Relfections", type: "Belgian Double", abv: "6.5%", location: "Oregon", cost: "$6.00" },
-  //   { name: "Summer Amusement", type: "Saison", abv: "4.5%", location: "Oregon", cost: "$4.00" },
-  //   { name: "Wandelpad", type: "Blonde", abv: "6.3%", location: "Oregon", cost: "$5.50" },
-  //   { name: "Crush", type: "Sour", abv: "5.0%", location: "Oregon", cost: "$5.00" },
-  //   { name: "Apocalypse", type: "IPA", abv: "6.8%", location: "Oregon", cost: "$6.50" }
-  // ],
+  let beer2 = [
+    "1337 H4x0r", "TRIPPLE IPA", "10.0%", "Colorado", "$9.00",
+    "Admiral Abyss", "Chocolate Stout", "7.0%", "Colorado", "$6.00",
+    "Alpha Twins", "Double IPA", "8.25%", "Colorado", "$7.00",
+    "Haole Bartender", "Sour", "6.0%", "Ccolorado", "$5.00",
+    "Fresh Haze", "IPA", "6.5%", "Oregon", "$5.00"];
+
+  let beer3 = [
+    "Mirror pond", "Pale Ale", "5.0%", "Oregon", "$5.00",
+    "Black Butte", "Porter", "5.2%", "Oregon", "$5.00",
+    "Obsidian", "Stout", "6.4%", "Oregon", "$5.00",
+    "Oatis", "Stout", "7.0%", "Oregon", "$6.00",
+    "Dawn of the Red", "Red IPA", "7.0%", "Oregon", "$6.00"];
+
+  let beer4 = [
+    "Pacific Rain", "Pale Ale", "5.4%", "Oregon", "$5.00",
+    "RPM", "IPA", "6.5%", "Oregon", "$6.00",
+    "Skunk Ape", "IRA", "6.0%", "Oregon", "$5.00",
+    "Armored Fist", "IDA", "9.0%", "Oregon", "$7.00",
+    "Moon Juice", "IPA", "7.3%", "Arizona", "$6.00"];
+
+  let beer5 = [
+    "Juicy Jack", "Hazy IPA", "6.5%", "Arizona", "$5.00",
+    "1920", "Lager", "4.7%", "Arizona", "$4.00",
+    "Coors Light", "Light Beer", "4.2%", "Colorado", "$4.00",
+    "Bud Light", "Light Beer", "5.0%", "USA", "$4.00",
+    "Nebula", "Stout", "6.0%", "Oregon", "$5.00"];
+
+  let beer6 = [
+    "Blocktoberfest", "Marzen", "5.5%", "Oregon", "$5.00",
+    "Dark Matter", "Chocolate Porter", "5.0%", "Oregon", "$5.00",
+    "Drive Me To Firenze", "Pilsner", "4.7%", "Oregon", "$5.00",
+    "Imagine", "Imperial Stout", "13.5%", "Oregon", "$9.00",
+    "Oud Bruin", "Brown Ale", "6.5%", "Oregon", "$6.00"];
+
+  let beer7 = [
+    "Specular Relfections", "Belgian Double", "6.5%", "Oregon", "$6.00",
+    "Summer Amusement", "Saison", "4.5%", "Oregon", "$4.00",
+    "Wandelpad", "Blonde", "6.3%", "Oregon", "$5.50",
+    "Crush", "Sour", "5.0%", "Oregon", "$5.00",
+    "Apocalypse", "IPA", "6.8%", "Oregon", "$6.50"];
 
   var count = 0;
   var totalCells = 5;
@@ -156,6 +166,85 @@ $(document).ready(function() {
     }
     // reset the count:
     count = 0;
+
+    var tbody = $("#mon");
+    for (var i = 0; i < beer2.length / 5; i++) {
+      // create an <tr> element, append it to the <tbody> and cache it as a variable:
+      var tr = $("<tr/>").appendTo(tbody);
+      for (var j = 0; j < totalCells; j++) {
+        // append <td> elements to previously created <tr> element:
+        tr.append("<td>" + beer2[count] + "</td>");
+        count++;
+      }
+    }
+    // reset the count:
+    count = 0;
+
+    var tbody = $("#tue");
+    for (var i = 0; i < beer3.length / 5; i++) {
+      // create an <tr> element, append it to the <tbody> and cache it as a variable:
+      var tr = $("<tr/>").appendTo(tbody);
+      for (var j = 0; j < totalCells; j++) {
+        // append <td> elements to previously created <tr> element:
+        tr.append("<td>" + beer3[count] + "</td>");
+        count++;
+      }
+    }
+    // reset the count:
+    count = 0;
+
+    var tbody = $("#wed");
+    for (var i = 0; i < beer4.length / 5; i++) {
+      // create an <tr> element, append it to the <tbody> and cache it as a variable:
+      var tr = $("<tr/>").appendTo(tbody);
+      for (var j = 0; j < totalCells; j++) {
+        // append <td> elements to previously created <tr> element:
+        tr.append("<td>" + beer4[count] + "</td>");
+        count++;
+      }
+    }
+    // reset the count:
+    count = 0;
+
+    var tbody = $("#thu");
+    for (var i = 0; i < beer5.length / 5; i++) {
+      // create an <tr> element, append it to the <tbody> and cache it as a variable:
+      var tr = $("<tr/>").appendTo(tbody);
+      for (var j = 0; j < totalCells; j++) {
+        // append <td> elements to previously created <tr> element:
+        tr.append("<td>" + beer5[count] + "</td>");
+        count++;
+      }
+    }
+    // reset the count:
+    count = 0;
+
+    var tbody = $("#fri");
+    for (var i = 0; i < beer6.length / 5; i++) {
+      // create an <tr> element, append it to the <tbody> and cache it as a variable:
+      var tr = $("<tr/>").appendTo(tbody);
+      for (var j = 0; j < totalCells; j++) {
+        // append <td> elements to previously created <tr> element:
+        tr.append("<td>" + beer6[count] + "</td>");
+        count++;
+      }
+    }
+    // reset the count:
+    count = 0;
+
+    var tbody = $("#sat");
+    for (var i = 0; i < beer7.length / 5; i++) {
+      // create an <tr> element, append it to the <tbody> and cache it as a variable:
+      var tr = $("<tr/>").appendTo(tbody);
+      for (var j = 0; j < totalCells; j++) {
+        // append <td> elements to previously created <tr> element:
+        tr.append("<td>" + beer7[count] + "</td>");
+        count++;
+      }
+    }
+    // reset the count:
+    count = 0;
+
   }
   writeTable();
 });
