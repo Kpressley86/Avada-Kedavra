@@ -5,6 +5,38 @@ $(document).ready(function () {
   var $submitBtn = $("#submit");
   var $exampleList = $("#example-list");
 
+//------------ RESERVATION FORM -------------- //
+
+  $(".submit").on("click", function (event) {
+    event.preventDefault(); 
+
+    //gathering all required elemants from the user's reservation submittion
+    var newBeerReservation = {
+        customerFirstName: $("inputFirstName").val().trim(), 
+        customerLastName: $("inputLastName").val().trim(), 
+        customerEmailAddress: $("inputEmailAddress").val().trim(), 
+    }; 
+
+    console.log(newBeerReservation); 
+
+    //Creating the API calls 
+    $.post("/api/reservations", newBeerReservation, 
+    function(data) {
+        if(data) {
+            alert("you have been booked. be on the look out for an email");
+        }
+        else {
+            alert("nope. try a different day")
+        }
+
+        //clear the user's input after submitting 
+        $("#inputFirstName").val(""); 
+        $("#inputLastName").val(""); 
+        $("#inputEmailAddress").val(""); 
+    });  
+}); 
+
+
   // The API object contains methods for each kind of request we'll make
   var API = {
     saveExample: function (example) {
@@ -247,4 +279,15 @@ $(document).ready(function () {
 
   }
   writeTable();
+
+  // Current Time  Function//
+
+  function currentTime() {
+    var current = moment().format('hh:mm');
+    $("#current-time").html(current);
+    setTimeout(currentTime, 1000);
+  };
+
+  currentTime();
+
 });
