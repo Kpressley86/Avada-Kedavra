@@ -6,7 +6,7 @@ var $exampleList = $("#example-list");
 
 // The API object contains methods for each kind of request we'll make
 var API = {
-  saveExample: function(example) {
+  saveExample: function (example) {
     return $.ajax({
       headers: {
         "Content-Type": "application/json"
@@ -16,13 +16,13 @@ var API = {
       data: JSON.stringify(example)
     });
   },
-  getExamples: function() {
+  getExamples: function () {
     return $.ajax({
       url: "api/examples",
       type: "GET"
     });
   },
-  deleteExample: function(id) {
+  deleteExample: function (id) {
     return $.ajax({
       url: "api/examples/" + id,
       type: "DELETE"
@@ -31,9 +31,9 @@ var API = {
 };
 
 // refreshExamples gets new examples from the db and repopulates the list
-var refreshExamples = function() {
-  API.getExamples().then(function(data) {
-    var $examples = data.map(function(example) {
+var refreshExamples = function () {
+  API.getExamples().then(function (data) {
+    var $examples = data.map(function (example) {
       var $a = $("<a>")
         .text(example.text)
         .attr("href", "/example/" + example.id);
@@ -61,7 +61,7 @@ var refreshExamples = function() {
 
 // handleFormSubmit is called whenever we submit a new example
 // Save the new example to the db and refresh the list
-var handleFormSubmit = function(event) {
+var handleFormSubmit = function (event) {
   event.preventDefault();
 
   var example = {
@@ -74,7 +74,7 @@ var handleFormSubmit = function(event) {
     return;
   }
 
-  API.saveExample(example).then(function() {
+  API.saveExample(example).then(function () {
     refreshExamples();
   });
 
@@ -84,12 +84,12 @@ var handleFormSubmit = function(event) {
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
 // Remove the example from the db and refresh the list
-var handleDeleteBtnClick = function() {
+var handleDeleteBtnClick = function () {
   var idToDelete = $(this)
     .parent()
     .attr("data-id");
 
-  API.deleteExample(idToDelete).then(function() {
+  API.deleteExample(idToDelete).then(function () {
     refreshExamples();
   });
 };
@@ -101,7 +101,7 @@ $exampleList.on("click", ".delete", handleDeleteBtnClick);
 
 // Array for beers //
 let beers = [
-  ["Codename: Superfan", "IPA", "6.5%" ,"Colorado", "$5.00"],
+  ["Codename: Superfan", "IPA", "6.5%", "Colorado", "$5.00"],
   ["Intergalactic Juice Hunter", "Double IPA", "8.0%", "Colorado", "$6.00"],
   ["Jetman Jimmy", "Golden Ale", "4.5%", "Colorado", "$4.50"],
   ["NOOB", "Pale Ale", "6.0%", "Colorado", "$5.00"],
@@ -137,12 +137,30 @@ let beers = [
   { name: "Crush", type: "Sour", abv: "5.0%", location: "Oregon", cost: "$5.00" },
   { name: "Apocalypse", type: "IPA", abv: "6.8%", location: "Oregon", cost: "$6.50" }
 ],
-  table = document.getElementById("table");
 
-for (let i = 0; i < beers.length; i++) {
-  var newRow = table.insertRow(table.length);
-  for (let d = 0; d < beers[1].length; d++) {
-      var cell = newRow.insertCell(j);
-      cell.innerHTML = beers[i][j];
+function writeTable() {
+  // cache <tbody> element:
+  var tbody = $('#body');
+  for (var i = 0; i < array.length / 8; i++) {
+    // create an <tr> element, append it to the <tbody> and cache it as a variable:
+    var tr = $('<tr/>').appendTo(tbody);
+    for (var j = 0; j < totalCells; j++) {
+      // append <td> elements to previously created <tr> element:
+      tr.append('<td>' + array[count] + '</td>');
+      count++;
+    }
   }
+  // reset the count:
+  count = 0;
 }
+
+
+//   table = document.getElementById("table");
+
+// for (let i = 0; i < beers.length; i++) {
+//   var newRow = table.insertRow(table.length);
+//   for (let d = 0; d < beers[1].length; d++) {
+//       var cell = newRow.insertCell(j);
+//       cell.innerHTML = beers[i][j];
+//   }
+// }
