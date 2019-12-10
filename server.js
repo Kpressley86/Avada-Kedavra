@@ -3,8 +3,13 @@ var moment = require("moment");
 require("dotenv").config();
 var express = require("express");
 var exphbs = require("express-handlebars");
-
+var nodemailer = require("nodemailer");
+var aws = require("aws-sdk");
 var db = require("./models");
+
+var transporter = nodemailer.createTransport({
+  SES: new aws.SES({ apiVersion: "2010-12-01" })
+});
 
 var app = express();
 var PORT = process.env.PORT || 3000;
