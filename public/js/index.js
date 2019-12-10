@@ -270,6 +270,9 @@ $(document).ready(function () {
       customerLastName: $("#lastName").val().trim(),
       customerEmailAddress: $("#email").val().trim(),
     };
+var email = $("#email").val().trim();
+var day = $("#day").val().trim();
+var firstName = $("#firstName").val().trim();
 
     console.log(newBeerReservation);
 
