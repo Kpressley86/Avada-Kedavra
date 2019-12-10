@@ -92,7 +92,7 @@ hr {
 .plantImage{
   content: url("../Images/plants/threeplants.png"); 
   height: 200px; 
-  align-content: center; 
+  text-align: center;
 }
 
 /* The below is used for the explore beer cards  */
