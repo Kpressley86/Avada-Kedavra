@@ -5,36 +5,36 @@ $(document).ready(function () {
   var $submitBtn = $("#submit");
   var $exampleList = $("#example-list");
 
-//------------ RESERVATION FORM -------------- //
+  //------------ RESERVATION FORM -------------- //
 
   $(".submit").on("click", function (event) {
-    event.preventDefault(); 
+    event.preventDefault();
 
     //gathering all required elemants from the user's reservation submittion
     var newBeerReservation = {
-        customerFirstName: $("inputFirstName").val().trim(), 
-        customerLastName: $("inputLastName").val().trim(), 
-        customerEmailAddress: $("inputEmailAddress").val().trim(), 
-    }; 
+      customerFirstName: $("inputFirstName").val().trim(),
+      customerLastName: $("inputLastName").val().trim(),
+      customerEmailAddress: $("inputEmailAddress").val().trim(),
+    };
 
-    console.log(newBeerReservation); 
+    console.log(newBeerReservation);
 
     //Creating the API calls 
-    $.post("/api/reservations", newBeerReservation, 
-    function(data) {
-        if(data) {
-            alert("you have been booked. be on the look out for an email");
+    $.post("/api/reservations", newBeerReservation,
+      function (data) {
+        if (data) {
+          alert("you have been booked. be on the look out for an email");
         }
         else {
-            alert("nope. try a different day")
+          alert("nope. try a different day")
         }
 
         //clear the user's input after submitting 
-        $("#inputFirstName").val(""); 
-        $("#inputLastName").val(""); 
-        $("#inputEmailAddress").val(""); 
-    });  
-}); 
+        $("#inputFirstName").val("");
+        $("#inputLastName").val("");
+        $("#inputEmailAddress").val("");
+      });
+  });
 
 
   // The API object contains methods for each kind of request we'll make
