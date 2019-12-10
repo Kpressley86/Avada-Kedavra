@@ -283,7 +283,7 @@ $(document).ready(function () {
   // Current Time  Function//
 
   function currentTime() {
-    var current = moment().format('hh:mm');
+    var current = moment().format('hh:mm:s');
     $("#current-time").html(current);
     setTimeout(currentTime, 1000);
   };
