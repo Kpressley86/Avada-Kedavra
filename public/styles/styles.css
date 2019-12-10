@@ -124,17 +124,18 @@ hr {
 
 .singleBeerCan1 {
   height: 70%; 
-  width: 75%; 
-}
-
-.singleBeerCan2 {
-  height: 70%; 
-  width: 75%; 
+  width: 75%;
+  margin-top:15px;  
 }
 
 .singleBeerCan3 {
   height: 70%; 
-  width: 70%; 
+  width: 80%; 
+  margin-top: 20px; 
+}
+
+#beerCardBody {
+  background-color: transparent; 
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -187,4 +188,6 @@ th{
   font-family: 'Raleway', sans-serif;
 }
 
-
+#smallText {
+  font-size: 12px; 
+}

@@ -15,16 +15,16 @@
     <!-- Fontawesome link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
-     <!-- Link to interal CSS  for user experince -->
-     <link rel="stylesheet" href="../styles/styles.css" media="screen" title="no title" charset="utf-8">
+    <!-- Link to interal CSS  for user experince -->
+    <link rel="stylesheet" href="../styles/styles.css" media="screen" title="no title" charset="utf-8">
 
-     <!-- Link to interal CSS/Hover.css  -->
-     <link rel="stylesheet" href="../styles/css/hover.css" media="screen" title="no title" charset="utf-8">
- 
-     <!-- Link to google fronts -->
-     <link href="https://fonts.googleapis.com/css?family=Alatsi|Raleway&display=swap" rel="stylesheet">
+    <!-- Link to interal CSS/Hover.css  -->
+    <link rel="stylesheet" href="../styles/css/hover.css" media="screen" title="no title" charset="utf-8">
 
-    <title>HAPPY HOURS</title>
+    <!-- Link to google fronts -->
+    <link href="https://fonts.googleapis.com/css?family=Alatsi|Raleway&display=swap" rel="stylesheet">
+
+    <title>HAPPY HOUR</title>
 </head>
 
 <body>
@@ -53,7 +53,7 @@
             <div class="row">
                 <div class="col-6">
                     <div class="jumbotron jumbotron-fluid happyHourHeaderJumbotron">
-                        <h4 class="happyHourHeaderh1">HAPPY HOURS</h4>
+                        <h4 class="happyHourHeaderh1">HAPPY HOUR</h4>
                         <h2 class="lead happyHourHeaderp">Reserve your a happy hour table on your favorite day!</h2>
                     </div>
                 </div>
@@ -70,9 +70,9 @@
         <div class="row">
             <div class="col-12">
                 <div class="card">
-                        <h5 class="card-header" id="cardHeaderText">Sunday </h5>
+                    <h5 class="card-header" id="cardHeaderText">Sunday </h5>
                     <div class="card-body">
-                            <p id="smallpTxtinBeeerCards">The following beers will be available for tasting today.</p>
+                        <p id="smallpTxtinBeeerCards">The following beers will be available for tasting today.</p>
                         <!-- Reserve now button in the cards  -->
                         <table border="0" class="display nowrap" width="100%">
                             <thead>
@@ -81,7 +81,7 @@
                                     <th>Type</th>
                                     <th>ABV %</th>
                                     <th>Location</th>
-                                    <th>Price</th>
+                                    <th>Price <span id="smallText">(per can)</span></th>
                                 </tr>
                             </thead>
                             <tbody id="sun">
@@ -94,7 +94,7 @@
         </div>
     </div>
     <br>
-    
+
     <!-- Beer Table Card  -->
     <br>
     <div class="container">
@@ -112,7 +112,7 @@
                                     <th>Type</th>
                                     <th>ABV %</th>
                                     <th>Location</th>
-                                    <th>Price</th>
+                                    <th>Price <span id="smallText">(per can)</span></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -132,9 +132,11 @@
         <div class="row">
             <div class="col-12">
                 <div class="card">
-                        <h5 class="card-header" id="cardHeaderText">Tuesday<span><h4 id="current-time"></h4></span></h5>
+                    <h5 class="card-header" id="cardHeaderText">Tuesday<span>
+                            <h4 id="current-time"></h4>
+                        </span></h5>
                     <div class="card-body">
-                            <p id="smallpTxtinBeeerCards">The following beers will be available for tasting today.</p>
+                        <p id="smallpTxtinBeeerCards">The following beers will be available for tasting today.</p>
                         <!-- Reserve now button in the cards  -->
                         <table id="tue" border="0" class="display nowrap" width="100%">
                             <thead>
@@ -143,7 +145,7 @@
                                     <th>Type</th>
                                     <th>ABV %</th>
                                     <th>Location</th>
-                                    <th>Price</th>
+                                    <th>Price <span id="smallText">(per can)</span></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -164,7 +166,7 @@
                 <div class="card">
                     <h5 class="card-header" id="cardHeaderText">Wednesday</h5>
                     <div class="card-body">
-                            <p id="smallpTxtinBeeerCards">The following beers will be available for tasting today.</p>
+                        <p id="smallpTxtinBeeerCards">The following beers will be available for tasting today.</p>
                         <!-- Reserve now button in the cards  -->
                         <table id="wed" border="0" class="display nowrap" width="100%">
                             <thead>
@@ -173,7 +175,7 @@
                                     <th>Type</th>
                                     <th>ABV %</th>
                                     <th>Location</th>
-                                    <th>Price</th>
+                                    <th>Price <span id="smallText">(per can)</span></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -192,9 +194,9 @@
         <div class="row">
             <div class="col-12">
                 <div class="card">
-                        <h5 class="card-header" id="cardHeaderText">Thursday</h5>
+                    <h5 class="card-header" id="cardHeaderText">Thursday</h5>
                     <div class="card-body">
-                            <p id="smallpTxtinBeeerCards">The following beers will be available for tasting today.</p>
+                        <p id="smallpTxtinBeeerCards">The following beers will be available for tasting today.</p>
                         <!-- Reserve now button in the cards  -->
                         <table id="thu" border="0" class="display nowrap" width="100%">
                             <thead>
@@ -203,7 +205,7 @@
                                     <th>Type</th>
                                     <th>ABV %</th>
                                     <th>Location</th>
-                                    <th>Price</th>
+                                    <th>Price <span id="smallText">(per can)</span></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -222,9 +224,9 @@
         <div class="row">
             <div class="col-12">
                 <div class="card">
-                        <h5 class="card-header" id="cardHeaderText">Friday</h5>
+                    <h5 class="card-header" id="cardHeaderText">Friday</h5>
                     <div class="card-body">
-                            <p id="smallpTxtinBeeerCards">The following beers will be available for tasting today.</p>
+                        <p id="smallpTxtinBeeerCards">The following beers will be available for tasting today.</p>
 
                         <!-- Reserve now button in the cards  -->
                         <table id="fri" border="0" class="display nowrap" width="100%">
@@ -234,7 +236,7 @@
                                     <th>Type</th>
                                     <th>ABV %</th>
                                     <th>Location</th>
-                                    <th>Price</th>
+                                    <th>Price <span id="smallText">(per can)</span></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -253,9 +255,9 @@
         <div class="row">
             <div class="col-12">
                 <div class="card">
-                        <h5 class="card-header" id="cardHeaderText">Saturday</h5>
+                    <h5 class="card-header" id="cardHeaderText">Saturday</h5>
                     <div class="card-body">
-                            <p id="smallpTxtinBeeerCards">The following beers will be available for tasting today.</p>
+                        <p id="smallpTxtinBeeerCards">The following beers will be available for tasting today.</p>
                         <!-- Reserve now button in the cards  -->
                         <table id="sat" border="0" class="display nowrap" width="100%">
                             <thead>
@@ -264,7 +266,7 @@
                                     <th>Type</th>
                                     <th>ABV %</th>
                                     <th>Location</th>
-                                    <th>Price</th>
+                                    <th>Price <span id="smallText">(per can)</span></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -280,82 +282,82 @@
 
     <!-- Below is the standaard footer  -->
     <div class="container">
-            <div class="row footerRow">
-                <footer class="page-footer font-small mdb-color pt-4">
-                    <hr>
-                    <div class="container text-center text-md-left">
-                        <div class="row text-center text-md-left mt-3 pb-3">
-                            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                                <h6 class="text-uppercase mb-4 font-weight-bold" id="linyTextStyle">THE SCOUT</h6>
-                                <p id="linyTextStyle">Here you can use rows and columns to organize your footer content. Lorem ipsum dolor
-                                    sit amet,
-                                    consectetur
-                                    adipisicing elit.</p>
-                            </div>
-    
-                            <hr class="w-100 clearfix d-md-none">
-                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                                <a href="/home">
-                                    <button class="btn btn-primary" id="linyTextStyle">HOME</button>
-                                </a>
-                                <br>
-                                <br>
-                                <a href="/happyHour">
-                                    <button class="btn btn-primary" id="linyTextStyle">HAPPY HOURS</button>
-                                </a>
-                            </div>
-    
-                            <hr class="w-100 clearfix d-md-none">
-                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                                <h6 class="text-uppercase mb-4 font-weight-bold" id="linyTextStyle">DOWNTOWN SCOTTSDALE</h6>
-                                <p class="card-text" id="linyTextStyle">3300 N Scottsdale rd, Scottsdale, AZ 85251</p>
-                                <p id="linyTextStyle"><span class="fas fa-map-marker-alt" id="directionsIcon"></span> Directions</p>
-                                <p id="linyTextStyle"><span class="fas fa-phone" id="phoneIcon"></span> 480.999.9009</p>
-                            </div>
-    
-                            <hr class="w-100 clearfix d-md-none">
-                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                                <h6 class="text-uppercase mb-4 font-weight-bold" id="linyTextStyle">DOWNTOWN DENVER</h6>
-                                <p class="card-text" id="linyTextStyle">1627 Tremont Pl, Denver, CO 80202</p>
-                                <p id="linyTextStyle"><span class="fas fa-map-marker-alt" id="directionsIcon"></span> Directions</p>
-                                <p id="linyTextStyle"><span class="fas fa-phone" id="phoneIcon"></span> 720.546.9900</p>
-                            </div>
+        <div class="row footerRow">
+            <footer class="page-footer font-small mdb-color pt-4">
+                <hr>
+                <div class="container text-center text-md-left">
+                    <div class="row text-center text-md-left mt-3 pb-3">
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold" id="linyTextStyle">THE SCOUT</h6>
+                            <p id="linyTextStyle">The best arizona beers are onnly sold at one place... The Scout. We
+                                look forward to meeting you at our next happy hour.</p>
                         </div>
-                        <hr>
-                        <!-- the below is the copyright and social media links -->
-                        <div class="row d-flex align-items-center">
-                            <div class="col-md-7 col-lg-8">
-                                <p class="text-center text-md-left" id="linyTextStyle">© 2018 Copyright
-                                </p>
-                            </div>
-                            <div class="col-md-5 col-lg-4 ml-lg-0">
-                                <!-- Social media buttons -->
-                                <div class="text-center text-md-right">
-                                    <ul class="list-unstyled list-inline">
-                                        <li class="list-inline-item">
-                                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                                <i class="fab fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                                <i class="fab fa-linkedin-in"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+
+                        <hr class="w-100 clearfix d-md-none">
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <a href="/home">
+                                <button class="btn btn-primary" id="linyTextStyle">HOME</button>
+                            </a>
+                            <br>
+                            <br>
+                            <a href="/happyHour">
+                                <button class="btn btn-primary" id="linyTextStyle">HAPPY HOURS</button>
+                            </a>
+                        </div>
+
+                        <hr class="w-100 clearfix d-md-none">
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold" id="linyTextStyle">DOWNTOWN SCOTTSDALE</h6>
+                            <p class="card-text" id="linyTextStyle">3300 N Scottsdale rd, Scottsdale, AZ 85251</p>
+                            <p id="linyTextStyle"><span class="fas fa-map-marker-alt" id="directionsIcon"></span>
+                                Directions</p>
+                            <p id="linyTextStyle"><span class="fas fa-phone" id="phoneIcon"></span> 480.999.9009</p>
+                        </div>
+
+                        <hr class="w-100 clearfix d-md-none">
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold" id="linyTextStyle">DOWNTOWN DENVER</h6>
+                            <p class="card-text" id="linyTextStyle">1627 Tremont Pl, Denver, CO 80202</p>
+                            <p id="linyTextStyle"><span class="fas fa-map-marker-alt" id="directionsIcon"></span>
+                                Directions</p>
+                            <p id="linyTextStyle"><span class="fas fa-phone" id="phoneIcon"></span> 720.546.9900</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- the below is the copyright and social media links -->
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-7 col-lg-8">
+                            <p class="text-center text-md-left" id="linyTextStyle">© 2018 Copyright
+                            </p>
+                        </div>
+                        <div class="col-md-5 col-lg-4 ml-lg-0">
+                            <!-- Social media buttons -->
+                            <div class="text-center text-md-right">
+                                <ul class="list-unstyled list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                </footer>
-            </div>
+                </div>
+            </footer>
         </div>
-        <!-- End of standard footer  -->
+    </div>
+    <!-- End of standard footer  -->
 
     <!-- End of standard footer  -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
