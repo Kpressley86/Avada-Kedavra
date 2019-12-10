@@ -14,16 +14,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
     <!-- Link to interal CSS  for user experince -->
-    <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../styles/styles.css" media="screen" title="no title" charset="utf-8">
 
     <!-- Link to interal CSS/Hover.css  -->
-    <link rel="stylesheet" href="/styles/css/hover.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../styles/css/hover.css" media="screen" title="no title" charset="utf-8">
 
-    <title>THE SCOUT</title>
+    <!-- Link to google fronts -->
+    <link href="https://fonts.googleapis.com/css?family=Alatsi|Raleway&display=swap" rel="stylesheet">
+
+    <title>HOME</title>
 </head>
 
 <body>
-    <div class="container-fuild containerImage">
+    <div class="container-fuild" id="containerImage">
         <!-- {{!-- Top Nav Bar  --}} -->
         <div class="container">
             <div class="row">
@@ -37,10 +40,7 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link standardFontText text-white" href="/">HOME</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link standardFontText text-white" href="/happyHour">HAPPY HOURS</a>
+                                    <a class="nav-link text-white" id="linyTextStyle" href="/happyHour">HAPPY HOURS</a>
                                 </li>
                             </ul>
                         </div>
@@ -52,12 +52,13 @@
                 <div class="col-12">
                     <div class="jumbotron jumbotron-fluid homeHeaderJumbotron">
                         <h4 class="homeHeaderh1">ARIZONA. SCOUTS.</h4>
-                        <h2 class="lead homeHeaderp">High quality beers for everyday occasions.</h2>
+                        <h2 class="lead homeHeaderp"><strong>High quality beers for everyday occasions.</strong></h2>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
 
     <!-- Container holding Company address and information  -->
@@ -69,31 +70,29 @@
                         <!-- first card -->
                         <div class="card firstCard">
                             <div class="card-body">
-                                <h5 class="card-title">Reserve your happy hour table</h5>
-                                <a href="/Reserve">
-                                    <button class="btn btn-primary">to reserve page</button>
-                                </a>
-                                <a href="/happyHour">
-                                    <button class="btn btn-primary">HAPPY HOURS</button>
+                                <h5 class="card-title" id="linyTextStyle">NOW DOING HAPPY HOURS</h5>
+                                <p id="linyTextStyle">View our happy hour dates and reserve your table</p>
+                                <a class="hvr-grow" href="/happyHour">
+                                    <button id="linyTextStyle" class="btn btn-primary">HAPPY HOURS</button>
                                 </a>
                             </div>
                         </div>
                         <!-- middle card (location one) -->
                         <div class="card locationCard">
                             <div class="card-body">
-                                <h5 class="card-title">DOWNTOWN SCOTTSDALE</h5>
-                                <p class="card-text">3300 N Scottsdale rd, Scottsdale, AZ 85251</p>
-                                <p><span class="fas fa-map-marker-alt"></span> Directions</p>
-                                <p><span class="fas fa-phone"></span> 480.999.9009</p>
+                                <h5 class="card-title" id="linyTextStyle">DOWNTOWN SCOTTSDALE</h5>
+                                <p class="card-text" id="linyTextStyle">3300 N Scottsdale rd, Scottsdale, AZ 85251</p>
+                                <p id="linyTextStyle"><span class="fas fa-map-marker-alt" id="directionsIcon"></span> Directions</p>
+                                <p id="linyTextStyle"><span class="fas fa-phone" id="phoneIcon"></span> 480.999.9009</p>
                             </div>
                         </div>
                         <!-- thrid card (location two)-->
                         <div class="card locationCard">
                             <div class="card-body">
-                                <h5 class="card-title">DOWNTOWN DENVER</h5>
-                                <p class="card-text">1627 Tremont Pl, Denver, CO 80202</p>
-                                <p><span class="fas fa-map-marker-alt"></span> Directions</p>
-                                <p><span class="fas fa-phone"></span> 720.546.9900</p>
+                                <h5 class="card-title" id="linyTextStyle">DOWNTOWN DENVER</h5>
+                                <p class="card-text" id="linyTextStyle">1627 Tremont Pl, Denver, CO 80202</p>
+                                <p id="linyTextStyle"><span class="fas fa-map-marker-alt" id="directionsIcon"></span> Directions</p>
+                                <p id="linyTextStyle"><span class="fas fa-phone" id="phoneIcon"></span> 720.546.9900</p>
                             </div>
                         </div>
                     </div>
@@ -102,6 +101,14 @@
         </div>
     </div>
 
+    <!-- Image above the eEXPLORE ARIZONA BEERS  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="plantImage"></div>
+            </div>
+        </div>
+    </div>
 
     <!-- Explore the beer images container -->
     <!-- Header above the beers  -->
@@ -110,7 +117,7 @@
             <div class="col-12">
                 <div class="card text-center exploreBeerHeaderCard">
                     <div class="card-body">
-                        <h1 class="card-title">EXPLORE ARIZONA'S CRAFT BEER</h1>
+                        <h1 class="card-title" id="exploeBeerrText">EXPLORE ARIZONA'S CRAFT BEER</h1>
                     </div>
                 </div>
             </div>
@@ -123,7 +130,8 @@
                         <img src="../Images/singleBeers/Screen Shot 2019-12-07 at 10.53.23 AM.png"
                             class="card-img-top singleBeerCan1" alt="Single Beer Can">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title" id="linyTextStyle">329 Days of Sun Lager</h5>
+                            <p id="linyTextStyle">The perfer loger for when you are soaking up the sun rays.</p>
 
                         </div>
                     </div>
@@ -131,16 +139,16 @@
                         <img src="../Images/singleBeers/Screen Shot 2019-12-07 at 10.53.19 AM.png"
                             class="card-img-top singleBeerCan2" alt="Single Beer Can">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-
+                            <h5 class="card-title" id="linyTextStyle">Heal the Bay IPA</h5>
+                            <p id="linyTextStyle">Cool, Crisp, and Refreahing. Everything you need in a beer.</p>
                         </div>
                     </div>
                     <div class="card exploreBeerCard3 hvr-grow">
                         <img src="../Images/singleBeers/Screen Shot 2019-12-07 at 10.53.13 AM.png"
                             class="card-img-top singleBeerCan3" alt="Single Beer Can">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-
+                            <h5 class="card-title" id="linyTextStyle">Hefe Weizen</h5>
+                            <p id="linyTextStyle">Because, why not.</p>
                         </div>
                     </div>
                 </div>
@@ -153,11 +161,12 @@
     <div class="container">
         <div class="row footerRow">
             <footer class="page-footer font-small mdb-color pt-4">
+                <hr>
                 <div class="container text-center text-md-left">
                     <div class="row text-center text-md-left mt-3 pb-3">
                         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">THE SCOUT</h6>
-                            <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor
+                            <h6 class="text-uppercase mb-4 font-weight-bold" id="linyTextStyle">THE SCOUT</h6>
+                            <p id="linyTextStyle">Here you can use rows and columns to organize your footer content. Lorem ipsum dolor
                                 sit amet,
                                 consectetur
                                 adipisicing elit.</p>
@@ -166,36 +175,36 @@
                         <hr class="w-100 clearfix d-md-none">
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                             <a href="/home">
-                                <button class="btn btn-primary">HOME</button>
+                                <button class="btn btn-primary" id="linyTextStyle">HOME</button>
                             </a>
                             <br>
                             <br>
                             <a href="/happyHour">
-                                <button class="btn btn-primary">HAPPY HOURS</button>
+                                <button class="btn btn-primary" id="linyTextStyle">HAPPY HOURS</button>
                             </a>
                         </div>
 
                         <hr class="w-100 clearfix d-md-none">
                         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">DOWNTOWN SCOTTSDALE</h6>
-                            <p class="card-text">3300 N Scottsdale rd, Scottsdale, AZ 85251</p>
-                            <p><span class="fas fa-map-marker-alt"></span> Directions</p>
-                            <p><span class="fas fa-phone"></span> 480.999.9009</p>
+                            <h6 class="text-uppercase mb-4 font-weight-bold" id="linyTextStyle">DOWNTOWN SCOTTSDALE</h6>
+                            <p class="card-text" id="linyTextStyle">3300 N Scottsdale rd, Scottsdale, AZ 85251</p>
+                            <p id="linyTextStyle"><span class="fas fa-map-marker-alt" id="directionsIcon"></span> Directions</p>
+                            <p id="linyTextStyle"><span class="fas fa-phone" id="phoneIcon"></span> 480.999.9009</p>
                         </div>
 
                         <hr class="w-100 clearfix d-md-none">
                         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">DOWNTOWN DENVER</h6>
-                            <p class="card-text">1627 Tremont Pl, Denver, CO 80202</p>
-                            <p><span class="fas fa-map-marker-alt"></span> Directions</p>
-                            <p><span class="fas fa-phone"></span> 720.546.9900</p>
+                            <h6 class="text-uppercase mb-4 font-weight-bold" id="linyTextStyle">DOWNTOWN DENVER</h6>
+                            <p class="card-text" id="linyTextStyle">1627 Tremont Pl, Denver, CO 80202</p>
+                            <p id="linyTextStyle"><span class="fas fa-map-marker-alt" id="directionsIcon"></span> Directions</p>
+                            <p id="linyTextStyle"><span class="fas fa-phone" id="phoneIcon"></span> 720.546.9900</p>
                         </div>
                     </div>
                     <hr>
                     <!-- the below is the copyright and social media links -->
                     <div class="row d-flex align-items-center">
                         <div class="col-md-7 col-lg-8">
-                            <p class="text-center text-md-left">© 2018 Copyright
+                            <p class="text-center text-md-left" id="linyTextStyle">© 2018 Copyright
                             </p>
                         </div>
                         <div class="col-md-5 col-lg-4 ml-lg-0">
@@ -210,11 +219,6 @@
                                     <li class="list-inline-item">
                                         <a class="btn-floating btn-sm rgba-white-slight mx-1">
                                             <i class="fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                            <i class="fab fa-google-plus-g"></i>
                                         </a>
                                     </li>
                                     <li class="list-inline-item">

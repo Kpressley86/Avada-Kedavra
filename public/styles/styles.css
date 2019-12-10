@@ -3,7 +3,7 @@
 /* Global Style Settiings */
 
 body {
-  background-color: #fff;; 
+  background-color: #fafafa;; 
 }
 
 div.logoImage {
@@ -19,22 +19,23 @@ th {
 
 /* Footer Styling  */
 footer{ 
-  background-color: #2d2d2d;
-  color: white; 
-}
-
-.footerRow{
-  background-color: #2d2d2d;
+  background-color: #fafafa;
 }
 
 hr {
-  background-color: white; 
+  background-color: rgb(133, 133, 133); 
 }
+
+.btn{
+  background-color: rgb(2, 2, 63); 
+  border-color: rgb(2, 2, 63); 
+}
+
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* The below is all used for the home.html file  */
-.containerImage{ 
+#containerImage{ 
   background-image: url("../Images/Screen\ Shot\ 2019-12-07\ at\ 11.39.30\ AM.png"); 
   background-size: cover; 
   background-repeat: no-repeat; 
@@ -43,20 +44,27 @@ hr {
 
 .homeHeaderJumbotron{
   background-color: transparent; 
+  margin-top: 50px; 
 }
 
 .homeHeaderh1 {
   color: white; 
+  font-family: 'Alatsi', sans-serif;
+  font-size: 25px; 
 }
 
 .homeHeaderp{
   color: white; 
+  font-size: 40px; 
+  font-family: 'Raleway', sans-serif;
 }
 
+#directionsIcon {
+  color: rgb(2, 2, 63); 
+}
 
-.btn{
-  background-color: rgb(2, 2, 63); 
-  border-color: rgb(2, 2, 63); 
+#phoneIcon {
+  color: rgb(2, 2, 63); 
 }
 
 /* The below are for the three cards on the home page  */
@@ -64,7 +72,7 @@ hr {
   margin-bottom: 20px; 
   padding-top:30px; 
   padding-bottom: 30px; 
-  top: -20px; 
+  top: -60px; 
 }
 
 .firstCard{
@@ -72,18 +80,32 @@ hr {
   text-align: center;
   border-color: transparent; 
 }
+#linyTextStyle{
+  font-family: 'Raleway', sans-serif;
+}
 
 .locationCard {
   border-color: transparent; 
 }
 
+/* Below this is the image above the Explore beers on the HOME page*/
+.plantImage{
+  content: url("../Images/plants/threeplants.png"); 
+  height: 200px; 
+  align-content: center; 
+}
 
 /* The below is used for the explore beer cards  */
 /* This is the explore arizona card  */
 .exploreBeerHeaderCard{
   border-color: transparent; 
-  margin-top: 80px; 
-  margin-bottom: 40px; 
+  margin-top: 10px; 
+  margin-bottom: 30px; 
+  background-color: transparent; 
+}
+
+#exploeBeerrText{
+  font-family: 'Alatsi', sans-serif;
 }
 
 /* The below are all of the beer cards */
@@ -91,6 +113,7 @@ hr {
   text-align: center;
   border-color: transparent; 
   margin-right: 10px; 
+  background-color: white; 
 }
 
 .exploreBeerCard3{
@@ -132,9 +155,36 @@ hr {
 }
 
 .happyHourHeaderh1{
-  color:white; 
+  color: white; 
+  font-family: 'Alatsi', sans-serif;
+  font-size: 25px; 
 }
 
 .happyHourHeaderp{
-  color:white; 
+  color: white;   
+  font-size: 40px; 
+  font-family: 'Raleway', sans-serif;
 }
+
+
+/* The below is all used for the beer tables  */
+
+#cardHeaderText{
+  background-color: white; 
+  font-family: 'Raleway', sans-serif;
+  padding-top: 20px; 
+  padding-bottom: 20px; 
+  font-size: 30px; 
+}
+
+#smallpTxtinBeeerCards{
+  font-family: 'Raleway', sans-serif;
+  margin-top: 10px; 
+  margin-bottom: 20px;  
+}
+
+th{
+  font-family: 'Raleway', sans-serif;
+}
+
+
