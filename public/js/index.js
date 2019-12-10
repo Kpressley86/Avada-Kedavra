@@ -2,40 +2,7 @@ $(document).ready(function () {
   // Get references to page elements
   var $exampleText = $("#example-text");
   var $exampleDescription = $("#example-description");
-  var $submitBtn = $("#submit");
   var $exampleList = $("#example-list");
-
-  //------------ RESERVATION FORM -------------- //
-
-  $(".submit").on("click", function (event) {
-    event.preventDefault();
-
-    //gathering all required elemants from the user's reservation submittion
-    var newBeerReservation = {
-      customerFirstName: $("inputFirstName").val().trim(),
-      customerLastName: $("inputLastName").val().trim(),
-      customerEmailAddress: $("inputEmailAddress").val().trim(),
-    };
-
-    console.log(newBeerReservation);
-
-    //Creating the API calls 
-    $.post("/api/reservations", newBeerReservation,
-      function (data) {
-        if (data) {
-          alert("you have been booked. be on the look out for an email");
-        }
-        else {
-          alert("nope. try a different day")
-        }
-
-        //clear the user's input after submitting 
-        $("#inputFirstName").val("");
-        $("#inputLastName").val("");
-        $("#inputEmailAddress").val("");
-      });
-  });
-
 
   // The API object contains methods for each kind of request we'll make
   var API = {
@@ -290,15 +257,49 @@ $(document).ready(function () {
 
   currentTime();
 
-  // SEND E-MAIL ALERT // 
-  Email.send({
-    Host: "smtp.yourisp.com",
-    Username: "username",
-    Password: "password",
-    To: 'them@website.com',
-    From: "you@isp.com",
-    Subject: "This is the subject",
-    Body: "And this is the body"
-  }).then(message => alert(message));
 
+  //------------ RESERVATION FORM -------------- //
+
+  $("#submit").on("click", function (event) {
+    event.preventDefault();
+
+    //gathering all required elemants from the user's reservation submittion
+    var newBeerReservation = {
+      customerDay: $("#day").val().trim(),
+      customerFirstName: $("#firstName").val().trim(),
+      customerLastName: $("#lastName").val().trim(),
+      customerEmailAddress: $("#email").val().trim(),
+    };
+
+    console.log(newBeerReservation);
+
+    //Creating the API calls 
+    $.post("/api/reservations", newBeerReservation,
+      function (data) {
+        if (data) {
+          alert("you have been booked. be on the look out for an email");
+        }
+        else {
+          alert("nope. try a different day")
+        }
+
+        //clear the user's input after submitting 
+        $("#day").val("");
+        $("#firstName").val("");
+        $("#lastName").val("");
+        $("#email").val("");
+      });
+
+    // SEND E-MAIL ALERT // 
+    Email.send({
+      Host: "https://avada-kedavra2.herokuapp.com/",
+      Username: `${firstName}`,
+      Password: "password",
+      To: `${email}`,
+      From: "Avada-Kedavra@theScout.com",
+      Subject: "Your Reservation at The Scout",
+      Body: `You now have a reservation for ${day}`
+    }).then(message => alert(message));
+
+  });
 });
