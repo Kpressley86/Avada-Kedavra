@@ -16,7 +16,7 @@
   "author": "Kelly Pressley, Calli Bonnet, Eric Figueroa, Simone Cunningham",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.587.0",
+    "aws-sdk": "^2.814.0",
     "dotenv": "^8.0.0",
     "express": "^4.17.0",
     "express-handlebars": "^3.1.0",
